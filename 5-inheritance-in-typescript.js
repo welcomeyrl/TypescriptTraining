@@ -27,7 +27,7 @@ class Vehicle {
     }
 }
 // class Car inherits from class Auto
-class WagonR extends Vehicle {
+class AstonMartin extends Vehicle {
     constructor(options) {
         super(options);
         this._seats = options.seats;

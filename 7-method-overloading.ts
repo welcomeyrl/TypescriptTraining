@@ -13,9 +13,12 @@ function areaFunction(side1: number, side2?:number, side3?: number) : number{
 
 }
 
-let areaRectangle = areaFunction(10, 5);
+window.onload = function add() {
+    let areaRectangle = areaFunction(10, 5);
 
-let span = document.createElement("span");
-span.innerText = "Area of Rectangle with Height 10 and Width 5 is: " + areaRectangle.toString();
+    let span = document.createElement("span");
+    span.innerText = "Area of Rectangle with Height 10 and Width 5 is: " + areaRectangle.toString();
 
-document.body.appendChild(span);
+    document.body.appendChild(span);
+};
+

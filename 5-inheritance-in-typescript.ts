@@ -50,7 +50,7 @@ interface ICarOptions extends IVehicleMetadata{
 }
 
 // class Car inherits from class Auto
-class WagonR extends Vehicle{
+class AstonMartin extends Vehicle{
     _seats: number;
     _type: string;
 

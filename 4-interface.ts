@@ -1,8 +1,8 @@
 interface IPerson{
-    greetingsFunction: () => string;
+    appendGreeting: () => string;
 }
 
-class NewEmployee implements IPerson{
+class Consultant implements IPerson{
     _firstName: string;
     _lastName: string;
     _ssn: number;
@@ -13,12 +13,15 @@ class NewEmployee implements IPerson{
         this._ssn = ssn;
     }
 
-    greetingsFunction(): string {
+    appendGreeting(): string {
         console.log("Name: " + this._firstName + " " + this._lastName);
         console.log("Social Security: " + this._ssn);
         return "Hello, " + this._firstName + " " + this._lastName;
     }
 }
 
-let _newEmployee: NewEmployee = new NewEmployee("Aditya", "Bhardwaj", 12231452)
-document.body.innerHTML = _newEmployee.greetingsFunction();
+window.onload = function addData() {
+    let consultant: Consultant = new Consultant("Chander", "Dhall", 123)
+    document.body.innerHTML = consultant.appendGreeting();
+};
+

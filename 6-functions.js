@@ -1,9 +1,9 @@
 "use strict";
-function greetVisitor(firstName, lastName) {
-    return "Hello, " + firstName + " " + lastName;
+function greetVisitor(audience) {
+    return "Hello, " + audience;
 }
 window.onload = function loadData() {
     let span = document.createElement("span");
-    span.innerText = greetVisitor("Aditya", "Bhardwaj");
+    span.innerText = greetVisitor("Dallas");
     document.body.appendChild(span);
 };

@@ -1,5 +1,5 @@
 "use strict";
-class NewEmployee {
+class Consultant {
     constructor(firstName, lastName, ssn) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -8,11 +8,13 @@ class NewEmployee {
         this._lastName = lastName;
         this._ssn = ssn;
     }
-    greetingsFunction() {
+    appendGreeting() {
         console.log("Name: " + this._firstName + " " + this._lastName);
         console.log("Social Security: " + this._ssn);
         return "Hello, " + this._firstName + " " + this._lastName;
     }
 }
-let _newEmployee = new NewEmployee("Aditya", "Bhardwaj", 12231452);
-document.body.innerHTML = _newEmployee.greetingsFunction();
+window.onload = function addData() {
+    let consultant = new Consultant("Chander", "Dhall", 123);
+    document.body.innerHTML = consultant.appendGreeting();
+};
